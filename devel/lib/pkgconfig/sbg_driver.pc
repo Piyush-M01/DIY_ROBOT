@@ -1,0 +1,8 @@
+prefix=/home/piyush/diy_bot/devel
+
+Name: sbg_driver
+Description: Description of sbg_driver
+Version: 3.1.1
+Cflags: -I/home/piyush/diy_bot/devel/include -I/home/piyush/diy_bot/src/sbg_ros_driver/src
+Libs: -L${prefix}/lib 
+Requires: message_runtime roscpp sensor_msgs std_msgs std_srvs geometry_msgs
