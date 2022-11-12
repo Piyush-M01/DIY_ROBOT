@@ -122,24 +122,24 @@ sbg_ros_driver/CMakeFiles/sbg_driver_generate_messages_lisp: /home/piyush/diy_bo
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfEuler.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfEuler.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfEuler.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfEuler.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfEuler.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfEuler.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfEuler.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from sbg_driver/SbgEkfEuler.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfEuler.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsPos.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsPos.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgGpsPos.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsPos.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsPos.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsPos.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgGpsPosStatus.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsPos.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsPos.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from sbg_driver/SbgGpsPos.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgGpsPos.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgMag.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgMag.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgMag.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgMag.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgMag.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgMag.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgMag.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgMagStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from sbg_driver/SbgMag.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgMag.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
@@ -151,8 +151,8 @@ sbg_ros_driver/CMakeFiles/sbg_driver_generate_messages_lisp: /home/piyush/diy_bo
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfNav.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfNav.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfNav.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfNav.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfNav.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfNav.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfNav.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from sbg_driver/SbgEkfNav.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfNav.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
@@ -176,27 +176,27 @@ sbg_ros_driver/CMakeFiles/sbg_driver_generate_messages_lisp: /home/piyush/diy_bo
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfQuat.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfStatus.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgEkfQuat.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Lisp code from sbg_driver/SbgEkfQuat.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgEkfQuat.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsVel.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsVel.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgGpsVel.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsVel.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsVel.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsVel.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgGpsVel.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgGpsVelStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating Lisp code from sbg_driver/SbgGpsVel.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgGpsVel.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgStatus.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgStatus.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgStatus.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgStatus.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgStatusAiding.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgStatus.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgStatusCom.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgStatus.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgStatus.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgStatusGeneral.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgStatus.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgStatusAiding.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating Lisp code from sbg_driver/SbgStatus.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgStatus.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
 
@@ -213,24 +213,24 @@ sbg_ros_driver/CMakeFiles/sbg_driver_generate_messages_lisp: /home/piyush/diy_bo
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuData.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuData.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgImuData.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuData.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuData.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuData.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgImuStatus.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuData.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating Lisp code from sbg_driver/SbgImuData.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgImuData.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuShort.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuShort.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgImuShort.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuShort.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuShort.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuShort.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgImuStatus.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgImuShort.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating Lisp code from sbg_driver/SbgImuShort.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgImuShort.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg
 
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgShipMotion.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgShipMotion.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgShipMotion.msg
-/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgShipMotion.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgShipMotion.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgShipMotion.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg/SbgShipMotion.lisp: /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgShipMotionStatus.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating Lisp code from sbg_driver/SbgShipMotion.msg"
 	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgShipMotion.msg -Isbg_driver:/home/piyush/diy_bot/src/sbg_ros_driver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p sbg_driver -o /home/piyush/diy_bot/devel/share/common-lisp/ros/sbg_driver/msg

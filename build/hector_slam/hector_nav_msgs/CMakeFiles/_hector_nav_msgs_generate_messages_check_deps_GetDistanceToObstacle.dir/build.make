@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/piyush/diy_bot/build
 include hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetDistanceToObstacle.dir/progress.make
 
 hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetDistanceToObstacle:
-	cd /home/piyush/diy_bot/build/hector_slam/hector_nav_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py hector_nav_msgs /home/piyush/diy_bot/src/hector_slam/hector_nav_msgs/srv/GetDistanceToObstacle.srv geometry_msgs/PointStamped:std_msgs/Header:geometry_msgs/Point
+	cd /home/piyush/diy_bot/build/hector_slam/hector_nav_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py hector_nav_msgs /home/piyush/diy_bot/src/hector_slam/hector_nav_msgs/srv/GetDistanceToObstacle.srv std_msgs/Header:geometry_msgs/PointStamped:geometry_msgs/Point
 
 _hector_nav_msgs_generate_messages_check_deps_GetDistanceToObstacle: hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetDistanceToObstacle
 _hector_nav_msgs_generate_messages_check_deps_GetDistanceToObstacle: hector_slam/hector_nav_msgs/CMakeFiles/_hector_nav_msgs_generate_messages_check_deps_GetDistanceToObstacle.dir/build.make

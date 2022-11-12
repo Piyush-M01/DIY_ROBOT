@@ -149,6 +149,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/piyush/diy_bot/build/hector_slam/hector_trajectory_server/cmake_install.cmake")
   include("/home/piyush/diy_bot/build/hector_slam/hector_mapping/cmake_install.cmake")
   include("/home/piyush/diy_bot/build/sbg_ros_driver/cmake_install.cmake")
+  include("/home/piyush/diy_bot/build/rrt-global-planner/cmake_install.cmake")
 
 endif()
 
