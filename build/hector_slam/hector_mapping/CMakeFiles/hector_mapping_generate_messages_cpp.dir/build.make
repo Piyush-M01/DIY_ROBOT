@@ -73,9 +73,9 @@ hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_cpp: /hom
 
 /home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /home/piyush/diy_bot/src/hector_slam/hector_mapping/srv/ResetMapping.srv
-/home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/share/gencpp/msg.h.template
 /home/piyush/diy_bot/devel/include/hector_mapping/ResetMapping.h: /opt/ros/noetic/share/gencpp/srv.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piyush/diy_bot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from hector_mapping/ResetMapping.srv"
