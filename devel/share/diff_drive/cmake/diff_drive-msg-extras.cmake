@@ -1,2 +1,0 @@
-set(diff_drive_MESSAGE_FILES "/home/piyush/diy_bot/devel/share/diff_drive/msg/GoToPoseAction.msg;/home/piyush/diy_bot/devel/share/diff_drive/msg/GoToPoseActionGoal.msg;/home/piyush/diy_bot/devel/share/diff_drive/msg/GoToPoseActionResult.msg;/home/piyush/diy_bot/devel/share/diff_drive/msg/GoToPoseActionFeedback.msg;/home/piyush/diy_bot/devel/share/diff_drive/msg/GoToPoseGoal.msg;/home/piyush/diy_bot/devel/share/diff_drive/msg/GoToPoseResult.msg;/home/piyush/diy_bot/devel/share/diff_drive/msg/GoToPoseFeedback.msg")
-set(diff_drive_SERVICE_FILES "")
