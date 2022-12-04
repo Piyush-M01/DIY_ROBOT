@@ -1,8 +1,0 @@
-prefix=/home/piyush/diy_bot/devel
-
-Name: diy_robot
-Description: Description of diy_robot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
