@@ -52,3 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/diy_robot" TYPE FILE FILES "/home/piyush/diy_bot/src/diy_robot/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/diy_robot" TYPE PROGRAM FILES "/home/piyush/diy_bot/build/diy_robot/catkin_generated/installspace/cmd_vel.py")
+endif()
+

@@ -29,7 +29,7 @@ confWithRos: false
 
 uartConf:
   # Port Name
-  portName: "/dev/ttyUSB2"
+  portName: "/dev/ttyUSB0"
 
   # Baude rate (4800 ,9600 ,19200 ,38400 ,115200 [default],230400 ,460800 ,921600)
   baudRate: 115200
@@ -124,7 +124,7 @@ aidingAssignment:
   # 0 Odometer is disabled
   # 1 Odometer connected only to ODO_A (unidirectional).
   # 2 Odometer connected to both ODO_A (signal A) and ODO_B (Signal B or direction) for bidirectional odometer.
-  odometerPinAssignment: 0
+  odometerPinAssignment: 1
 
 
 

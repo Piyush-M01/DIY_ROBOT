@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+diy_robot/CMakeFiles/goal.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 diy_robot/CMakeFiles/goal.dir/rule
+.PHONY : diy_robot/CMakeFiles/goal.dir/rule
+
+# Convenience name for target.
+goal: diy_robot/CMakeFiles/goal.dir/rule
+
+.PHONY : goal
+
+# fast build rule for target.
+goal/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/build
+.PHONY : goal/fast
+
+# Convenience name for target.
 diy_robot/CMakeFiles/velocity.dir/rule:
 	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 diy_robot/CMakeFiles/velocity.dir/rule
 .PHONY : diy_robot/CMakeFiles/velocity.dir/rule
@@ -785,6 +800,33 @@ src/odom_broadcaster.cpp.s:
 	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/odom_broadcaster.dir/build.make diy_robot/CMakeFiles/odom_broadcaster.dir/src/odom_broadcaster.cpp.s
 .PHONY : src/odom_broadcaster.cpp.s
 
+src/send_goals.o: src/send_goals.cpp.o
+
+.PHONY : src/send_goals.o
+
+# target to build an object file
+src/send_goals.cpp.o:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/src/send_goals.cpp.o
+.PHONY : src/send_goals.cpp.o
+
+src/send_goals.i: src/send_goals.cpp.i
+
+.PHONY : src/send_goals.i
+
+# target to preprocess a source file
+src/send_goals.cpp.i:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/src/send_goals.cpp.i
+.PHONY : src/send_goals.cpp.i
+
+src/send_goals.s: src/send_goals.cpp.s
+
+.PHONY : src/send_goals.s
+
+# target to generate assembly for a file
+src/send_goals.cpp.s:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/src/send_goals.cpp.s
+.PHONY : src/send_goals.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -794,6 +836,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... goal"
 	@echo "... velocity"
 	@echo "... map_broadcaster"
 	@echo "... tf2_msgs_generate_messages_py"
@@ -844,6 +887,9 @@ help:
 	@echo "... src/odom_broadcaster.o"
 	@echo "... src/odom_broadcaster.i"
 	@echo "... src/odom_broadcaster.s"
+	@echo "... src/send_goals.o"
+	@echo "... src/send_goals.i"
+	@echo "... src/send_goals.s"
 .PHONY : help
 
 

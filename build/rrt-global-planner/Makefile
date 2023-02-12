@@ -56,40 +56,6 @@ CMAKE_BINARY_DIR = /home/piyush/diy_bot/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -102,26 +68,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -134,6 +91,49 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,289 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule
 
 # Convenience name for target.
-map_msgs_generate_messages_cpp: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+rrt_global_planner_lib: rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule
 
-.PHONY : map_msgs_generate_messages_cpp
+.PHONY : rrt_global_planner_lib
 
 # fast build rule for target.
-map_msgs_generate_messages_cpp/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
-.PHONY : map_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
-
-# Convenience name for target.
-costmap_2d_generate_messages_py: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
-
-.PHONY : costmap_2d_generate_messages_py
-
-# fast build rule for target.
-costmap_2d_generate_messages_py/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build
-.PHONY : costmap_2d_generate_messages_py/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_eus: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
-
-.PHONY : map_msgs_generate_messages_eus
-
-# fast build rule for target.
-map_msgs_generate_messages_eus/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/build
-.PHONY : map_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_lisp: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : map_msgs_generate_messages_lisp
-
-# fast build rule for target.
-map_msgs_generate_messages_lisp/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
-.PHONY : map_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_nodejs: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : map_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-map_msgs_generate_messages_nodejs/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
-.PHONY : map_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule
-
-# Convenience name for target.
-costmap_2d_gencfg: rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule
-
-.PHONY : costmap_2d_gencfg
-
-# fast build rule for target.
-costmap_2d_gencfg/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/build
-.PHONY : costmap_2d_gencfg/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_py: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-
-.PHONY : map_msgs_generate_messages_py
-
-# fast build rule for target.
-map_msgs_generate_messages_py/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/build
-.PHONY : map_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-costmap_2d_generate_messages_nodejs: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
-
-.PHONY : costmap_2d_generate_messages_nodejs
-
-# fast build rule for target.
-costmap_2d_generate_messages_nodejs/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
-.PHONY : costmap_2d_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-costmap_2d_generate_messages_eus: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
-
-.PHONY : costmap_2d_generate_messages_eus
-
-# fast build rule for target.
-costmap_2d_generate_messages_eus/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
-.PHONY : costmap_2d_generate_messages_eus/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-costmap_2d_generate_messages_lisp: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
-
-.PHONY : costmap_2d_generate_messages_lisp
-
-# fast build rule for target.
-costmap_2d_generate_messages_lisp/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
-.PHONY : costmap_2d_generate_messages_lisp/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-costmap_2d_generate_messages_cpp: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
-
-.PHONY : costmap_2d_generate_messages_cpp
-
-# fast build rule for target.
-costmap_2d_generate_messages_cpp/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
-.PHONY : costmap_2d_generate_messages_cpp/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule
-
-# Convenience name for target.
-base_local_planner_gencfg: rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule
-
-.PHONY : base_local_planner_gencfg
-
-# fast build rule for target.
-base_local_planner_gencfg/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/build
-.PHONY : base_local_planner_gencfg/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule
-
-# Convenience name for target.
-base_local_planner_generate_messages_py: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule
-
-.PHONY : base_local_planner_generate_messages_py
-
-# fast build rule for target.
-base_local_planner_generate_messages_py/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/build
-.PHONY : base_local_planner_generate_messages_py/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-base_local_planner_generate_messages_nodejs: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule
-
-.PHONY : base_local_planner_generate_messages_nodejs
-
-# fast build rule for target.
-base_local_planner_generate_messages_nodejs/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/build
-.PHONY : base_local_planner_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-base_local_planner_generate_messages_lisp: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule
-
-.PHONY : base_local_planner_generate_messages_lisp
-
-# fast build rule for target.
-base_local_planner_generate_messages_lisp/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/build
-.PHONY : base_local_planner_generate_messages_lisp/fast
-
-# Convenience name for target.
-rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-base_local_planner_generate_messages_eus: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule
-
-.PHONY : base_local_planner_generate_messages_eus
-
-# fast build rule for target.
-base_local_planner_generate_messages_eus/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/build
-.PHONY : base_local_planner_generate_messages_eus/fast
+rrt_global_planner_lib/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/build.make rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/build
+.PHONY : rrt_global_planner_lib/fast
 
 # Convenience name for target.
 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/rule:
@@ -468,64 +198,244 @@ base_local_planner_generate_messages_cpp/fast:
 .PHONY : base_local_planner_generate_messages_cpp/fast
 
 # Convenience name for target.
-rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+base_local_planner_generate_messages_eus: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_lisp
+.PHONY : base_local_planner_generate_messages_eus
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+base_local_planner_generate_messages_eus/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_eus.dir/build
+.PHONY : base_local_planner_generate_messages_eus/fast
 
 # Convenience name for target.
-rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_eus: rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+base_local_planner_generate_messages_lisp: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_eus
+.PHONY : base_local_planner_generate_messages_lisp
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make rrt-global-planner/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+base_local_planner_generate_messages_lisp/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_lisp.dir/build
+.PHONY : base_local_planner_generate_messages_lisp/fast
 
 # Convenience name for target.
-rrt-global-planner/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_gencfg: rrt-global-planner/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+base_local_planner_generate_messages_nodejs: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/rule
 
-.PHONY : dynamic_reconfigure_gencfg
+.PHONY : base_local_planner_generate_messages_nodejs
 
 # fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make rrt-global-planner/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
+base_local_planner_generate_messages_nodejs/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_nodejs.dir/build
+.PHONY : base_local_planner_generate_messages_nodejs/fast
 
 # Convenience name for target.
-rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule
-.PHONY : rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule
+rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rrt_global_planner_lib: rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/rule
+base_local_planner_generate_messages_py: rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/rule
 
-.PHONY : rrt_global_planner_lib
+.PHONY : base_local_planner_generate_messages_py
 
 # fast build rule for target.
-rrt_global_planner_lib/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/build.make rrt-global-planner/CMakeFiles/rrt_global_planner_lib.dir/build
-.PHONY : rrt_global_planner_lib/fast
+base_local_planner_generate_messages_py/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_generate_messages_py.dir/build
+.PHONY : base_local_planner_generate_messages_py/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule
+
+# Convenience name for target.
+base_local_planner_gencfg: rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/rule
+
+.PHONY : base_local_planner_gencfg
+
+# fast build rule for target.
+base_local_planner_gencfg/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/build.make rrt-global-planner/CMakeFiles/base_local_planner_gencfg.dir/build
+.PHONY : base_local_planner_gencfg/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_cpp: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+
+.PHONY : costmap_2d_generate_messages_cpp
+
+# fast build rule for target.
+costmap_2d_generate_messages_cpp/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
+.PHONY : costmap_2d_generate_messages_cpp/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_lisp: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+
+.PHONY : costmap_2d_generate_messages_lisp
+
+# fast build rule for target.
+costmap_2d_generate_messages_lisp/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+.PHONY : costmap_2d_generate_messages_lisp/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_cpp: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : map_msgs_generate_messages_cpp
+
+# fast build rule for target.
+map_msgs_generate_messages_cpp/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
+.PHONY : map_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_eus: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+
+.PHONY : costmap_2d_generate_messages_eus
+
+# fast build rule for target.
+costmap_2d_generate_messages_eus/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
+.PHONY : costmap_2d_generate_messages_eus/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_nodejs: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+
+.PHONY : costmap_2d_generate_messages_nodejs
+
+# fast build rule for target.
+costmap_2d_generate_messages_nodejs/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
+.PHONY : costmap_2d_generate_messages_nodejs/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_py: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_nodejs: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : map_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+map_msgs_generate_messages_nodejs/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_nodejs.dir/build
+.PHONY : map_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_lisp: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : map_msgs_generate_messages_lisp
+
+# fast build rule for target.
+map_msgs_generate_messages_lisp/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
+.PHONY : map_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_eus: rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+.PHONY : map_msgs_generate_messages_eus
+
+# fast build rule for target.
+map_msgs_generate_messages_eus/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make rrt-global-planner/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+.PHONY : map_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule
+
+# Convenience name for target.
+costmap_2d_gencfg: rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/rule
+
+.PHONY : costmap_2d_gencfg
+
+# fast build rule for target.
+costmap_2d_gencfg/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_gencfg.dir/build
+.PHONY : costmap_2d_gencfg/fast
+
+# Convenience name for target.
+rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+.PHONY : rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_py: rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+
+.PHONY : costmap_2d_generate_messages_py
+
+# fast build rule for target.
+costmap_2d_generate_messages_py/fast:
+	cd /home/piyush/diy_bot/build && $(MAKE) -f rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make rrt-global-planner/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+.PHONY : costmap_2d_generate_messages_py/fast
 
 src/rrt.o: src/rrt.cpp.o
 
@@ -560,37 +470,31 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... map_msgs_generate_messages_cpp"
-	@echo "... costmap_2d_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... map_msgs_generate_messages_eus"
-	@echo "... map_msgs_generate_messages_lisp"
-	@echo "... map_msgs_generate_messages_nodejs"
-	@echo "... costmap_2d_gencfg"
-	@echo "... map_msgs_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... edit_cache"
-	@echo "... costmap_2d_generate_messages_nodejs"
-	@echo "... costmap_2d_generate_messages_eus"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... costmap_2d_generate_messages_lisp"
-	@echo "... costmap_2d_generate_messages_cpp"
-	@echo "... rebuild_cache"
-	@echo "... base_local_planner_gencfg"
-	@echo "... base_local_planner_generate_messages_py"
-	@echo "... base_local_planner_generate_messages_nodejs"
-	@echo "... base_local_planner_generate_messages_lisp"
 	@echo "... install/strip"
-	@echo "... base_local_planner_generate_messages_eus"
-	@echo "... base_local_planner_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... test"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... rrt_global_planner_lib"
-	@echo "... list_install_components"
+	@echo "... install/local"
 	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... test"
+	@echo "... rrt_global_planner_lib"
+	@echo "... base_local_planner_generate_messages_cpp"
+	@echo "... base_local_planner_generate_messages_eus"
+	@echo "... base_local_planner_generate_messages_lisp"
+	@echo "... base_local_planner_generate_messages_nodejs"
+	@echo "... base_local_planner_generate_messages_py"
+	@echo "... base_local_planner_gencfg"
+	@echo "... costmap_2d_generate_messages_cpp"
+	@echo "... costmap_2d_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... costmap_2d_generate_messages_eus"
+	@echo "... costmap_2d_generate_messages_nodejs"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... map_msgs_generate_messages_py"
+	@echo "... map_msgs_generate_messages_nodejs"
+	@echo "... map_msgs_generate_messages_lisp"
+	@echo "... map_msgs_generate_messages_eus"
+	@echo "... costmap_2d_gencfg"
+	@echo "... costmap_2d_generate_messages_py"
 	@echo "... src/rrt.o"
 	@echo "... src/rrt.i"
 	@echo "... src/rrt.s"

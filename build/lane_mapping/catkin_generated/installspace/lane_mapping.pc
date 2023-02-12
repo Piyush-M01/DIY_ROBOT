@@ -1,0 +1,8 @@
+prefix=/home/piyush/diy_bot/install
+
+Name: lane_mapping
+Description: Description of lane_mapping
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -213,4 +213,10 @@ add_executable(odom_broadcaster src/odom_broadcaster.cpp)
 target_link_libraries(odom_broadcaster ${catkin_LIBRARIES})
 add_executable(map_broadcaster src/map_broadcaster.cpp)
 target_link_libraries(map_broadcaster ${catkin_LIBRARIES})
+add_executable(goal src/send_goals.cpp)
+target_link_libraries(goal ${catkin_LIBRARIES})
 # add_dependencies(velocity diy_robot_generate_messages_cpp)
+
+catkin_install_python(PROGRAMS src/cmd_vel.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

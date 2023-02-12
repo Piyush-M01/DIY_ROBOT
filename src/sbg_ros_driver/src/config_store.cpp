@@ -30,8 +30,8 @@ void ConfigStore::loadDriverParameters(const ros::NodeHandle& ref_node_handle)
 
 void ConfigStore::loadOdomParameters(const ros::NodeHandle& ref_node_handle)
 {
-  ref_node_handle.param<bool>       ("odometry/enable"   , m_odom_enable_          , true);
-  ref_node_handle.param<bool>       ("odometry/publishTf", m_odom_publish_tf_      , true);
+  ref_node_handle.param<bool>       ("odometry/enable"   , m_odom_enable_          , false);
+  ref_node_handle.param<bool>       ("odometry/publishTf", m_odom_publish_tf_      , false);
   ref_node_handle.param<std::string>("odometry/odomFrameId", m_odom_frame_id_      , "odom");
   ref_node_handle.param<std::string>("odometry/baseFrameId", m_odom_base_frame_id_ , "base_link");
   ref_node_handle.param<std::string>("odometry/initFrameId", m_odom_init_frame_id_ , "map");
@@ -39,7 +39,7 @@ void ConfigStore::loadOdomParameters(const ros::NodeHandle& ref_node_handle)
 
 void ConfigStore::loadCommunicationParameters(const ros::NodeHandle& ref_node_handle)
 {
-  ref_node_handle.param<bool>("confWithRos", m_configure_through_ros_, true);
+  ref_node_handle.param<bool>("confWithRos", m_configure_through_ros_, false);
 
   if (ref_node_handle.hasParam("uartConf"))
   {

@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/piyush/diy_bot/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/piyush/diy_bot/src/hector_slam/hector_geotiff/include/**",
+        "/home/piyush/diy_bot/src/hector_slam/hector_map_tools/include/**",
+        "/home/piyush/diy_bot/src/hector_slam/hector_mapping/include/**",
+        "/home/piyush/diy_bot/src/hector_slam/hector_marker_drawing/include/**",
+        "/home/piyush/diy_bot/src/localization_data_pub/include/**",
+        "/home/piyush/diy_bot/src/rrt-global-planner/include/**",
+        "/home/piyush/diy_bot/src/sbg_ros_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

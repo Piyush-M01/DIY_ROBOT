@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/piyush/diy_bot/build
 include sbg_ros_driver/CMakeFiles/_sbg_driver_generate_messages_check_deps_SbgUtcTime.dir/progress.make
 
 sbg_ros_driver/CMakeFiles/_sbg_driver_generate_messages_check_deps_SbgUtcTime:
-	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sbg_driver /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgUtcTime.msg sbg_driver/SbgUtcTimeStatus:std_msgs/Header
+	cd /home/piyush/diy_bot/build/sbg_ros_driver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sbg_driver /home/piyush/diy_bot/src/sbg_ros_driver/msg/SbgUtcTime.msg std_msgs/Header:sbg_driver/SbgUtcTimeStatus
 
 _sbg_driver_generate_messages_check_deps_SbgUtcTime: sbg_ros_driver/CMakeFiles/_sbg_driver_generate_messages_check_deps_SbgUtcTime
 _sbg_driver_generate_messages_check_deps_SbgUtcTime: sbg_ros_driver/CMakeFiles/_sbg_driver_generate_messages_check_deps_SbgUtcTime.dir/build.make

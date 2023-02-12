@@ -1,0 +1,8 @@
+prefix=/home/piyush/diy_bot/devel
+
+Name: serial_comm
+Description: Description of serial_comm
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
