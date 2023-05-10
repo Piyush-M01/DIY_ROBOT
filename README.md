@@ -33,7 +33,7 @@ rosrun rqt_reconfigure rqt_reconfigure
 roslaunch diy_robot localisation.launch
 ```
 ## Provide WayPoints using Publish Point button in Rviz
-# All the waypoints will be followed in a sequential order
+All the waypoints will be followed in a sequential order
 ```
 rosrun diy_robot waypoints.py
 ```
