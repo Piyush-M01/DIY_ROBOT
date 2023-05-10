@@ -19,7 +19,7 @@ rostopic echo /odom*
 ```
 roslaunch diy_robot mapping.launch
 ```
-## lane detection detection
+## lane detection
 ```
 python3 src/lane_mapping/src/realsense.py
 ```
