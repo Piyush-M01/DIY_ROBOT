@@ -19,7 +19,7 @@ roslaunch diy_robot mapping.launch
 ```
 ## lane detection
 ```
-python3 src/lane_mapping/src/realsense.py
+rosrun lane_mapping realsense.py 
 ```
 ```
 rosrun lane_mapping img_to_laser.py
@@ -31,4 +31,9 @@ rosrun rqt_reconfigure rqt_reconfigure
 ## Run AutoNav
 ```
 roslaunch diy_robot localisation.launch
+```
+## Provide WayPoints using Publish Point button in Rviz
+# All the waypoints will be followed in a sequential order
+```
+rosrun diy_robot waypoints.py
 ```
