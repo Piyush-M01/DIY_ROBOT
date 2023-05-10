@@ -1,0 +1,10 @@
+\subsubsection usage Usage
+\verbatim
+<node name="lane_mapping" pkg="lane_mapping" type="lane_mapping">
+  <param name="disc_factor" type="double" value="0.0009525" />
+  <param name="scaling_factor" type="int" value="100000" />
+  <param name="angle_increment" type="double" value="0.11894988298416137" />
+  <param name="range_size" type="int" value="180" />
+</node>
+\endverbatim
+

@@ -1,0 +1,9 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~disc_factor" : \b [double] An Integer parameter min: 0.0005, default: 0.0009525, max: 0.001
+- \b "~scaling_factor" : \b [int] An Integer parameter min: 100000, default: 100000, max: 1000000
+- \b "~angle_increment" : \b [double] An Integer parameter min: 0.008750975131988525, default: 0.11894988298416137, max: 1.0
+- \b "~range_size" : \b [int] An Integer parameter min: 1, default: 180, max: 360
+

@@ -1,0 +1,8 @@
+prefix=/home/piyush/diy_bot/devel
+
+Name: diff_drive
+Description: Description of diff_drive
+Version: 1.0.0
+Cflags: -I/home/piyush/diy_bot/devel/include
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs

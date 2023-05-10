@@ -1,0 +1,2 @@
+aws-robomaker-racetrack-world:diy_robot:lane_mapping:rplidar_ros:sbg_ros_driver:serial_comm
+-DCATKIN_DEVEL_PREFIX=/home/piyush/diy_bot/devel -DCMAKE_INSTALL_PREFIX=/home/piyush/diy_bot/install -G Unix Makefiles
