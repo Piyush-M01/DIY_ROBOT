@@ -37,4 +37,7 @@ All the waypoints will be followed in a sequential order
 ```
 rosrun diy_robot waypoints.py
 ```
-![Test Run](https://raw.githubusercontent.com/Piyush-M01/diy_bot/v3.0/IGVC_autonav_test.mp4)
+
+Test Run:
+https://github.com/Piyush-M01/diy_bot/assets/79186088/6753d2ad-6dfd-4c5e-8e71-356a8d5b08fe
+
