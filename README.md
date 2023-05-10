@@ -11,7 +11,7 @@ rosrun serial_comm velocity_serial
 ```
 ## To check if the data is getting published to odometry
 ```
-rostopic echo /odom*
+rostopic echo /odom
 ```
 ## To map a new environment
 ```
