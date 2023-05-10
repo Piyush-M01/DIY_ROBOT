@@ -219,6 +219,10 @@ catkin_install_python(PROGRAMS src/img_to_laser.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+catkin_install_python(PROGRAMS src/realsense.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 # add_dependencies(example_node ${PROJECT_NAME}_gencfg)
 add_executable(laser_broadcaster src/laser_to_base_tf.cpp)
 target_link_libraries(laser_broadcaster ${catkin_LIBRARIES})

@@ -119,7 +119,6 @@
 /home/piyush/diy_bot/build/diy_robot/CMakeFiles/rviz_click.dir
 /home/piyush/diy_bot/build/diy_robot/CMakeFiles/install/local.dir
 /home/piyush/diy_bot/build/diy_robot/CMakeFiles/odom_broadcaster.dir
-/home/piyush/diy_bot/build/diy_robot/CMakeFiles/goal.dir
 /home/piyush/diy_bot/build/diy_robot/CMakeFiles/velocity.dir
 /home/piyush/diy_bot/build/lane_mapping/CMakeFiles/install/strip.dir
 /home/piyush/diy_bot/build/lane_mapping/CMakeFiles/install.dir

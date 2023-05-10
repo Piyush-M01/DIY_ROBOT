@@ -198,21 +198,6 @@ odom_broadcaster/fast:
 .PHONY : odom_broadcaster/fast
 
 # Convenience name for target.
-diy_robot/CMakeFiles/goal.dir/rule:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 diy_robot/CMakeFiles/goal.dir/rule
-.PHONY : diy_robot/CMakeFiles/goal.dir/rule
-
-# Convenience name for target.
-goal: diy_robot/CMakeFiles/goal.dir/rule
-
-.PHONY : goal
-
-# fast build rule for target.
-goal/fast:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/build
-.PHONY : goal/fast
-
-# Convenience name for target.
 diy_robot/CMakeFiles/velocity.dir/rule:
 	cd /home/piyush/diy_bot/build && $(MAKE) -f CMakeFiles/Makefile2 diy_robot/CMakeFiles/velocity.dir/rule
 .PHONY : diy_robot/CMakeFiles/velocity.dir/rule
@@ -308,33 +293,6 @@ src/rviz_click_to_2d.cpp.s:
 	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/rviz_click.dir/build.make diy_robot/CMakeFiles/rviz_click.dir/src/rviz_click_to_2d.cpp.s
 .PHONY : src/rviz_click_to_2d.cpp.s
 
-src/send_goals.o: src/send_goals.cpp.o
-
-.PHONY : src/send_goals.o
-
-# target to build an object file
-src/send_goals.cpp.o:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/src/send_goals.cpp.o
-.PHONY : src/send_goals.cpp.o
-
-src/send_goals.i: src/send_goals.cpp.i
-
-.PHONY : src/send_goals.i
-
-# target to preprocess a source file
-src/send_goals.cpp.i:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/src/send_goals.cpp.i
-.PHONY : src/send_goals.cpp.i
-
-src/send_goals.s: src/send_goals.cpp.s
-
-.PHONY : src/send_goals.s
-
-# target to generate assembly for a file
-src/send_goals.cpp.s:
-	cd /home/piyush/diy_bot/build && $(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/src/send_goals.cpp.s
-.PHONY : src/send_goals.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -350,7 +308,6 @@ help:
 	@echo "... rviz_click"
 	@echo "... install/local"
 	@echo "... odom_broadcaster"
-	@echo "... goal"
 	@echo "... velocity"
 	@echo "... src/cmd_vel.o"
 	@echo "... src/cmd_vel.i"
@@ -361,9 +318,6 @@ help:
 	@echo "... src/rviz_click_to_2d.o"
 	@echo "... src/rviz_click_to_2d.i"
 	@echo "... src/rviz_click_to_2d.s"
-	@echo "... src/send_goals.o"
-	@echo "... src/send_goals.i"
-	@echo "... src/send_goals.s"
 .PHONY : help
 
 

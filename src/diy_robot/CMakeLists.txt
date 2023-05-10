@@ -213,13 +213,12 @@ add_executable(odom_broadcaster src/odom_broadcaster.cpp)
 target_link_libraries(odom_broadcaster ${catkin_LIBRARIES})
 # add_executable(map_broadcaster src/map_broadcaster.cpp)
 # target_link_libraries(map_broadcaster ${catkin_LIBRARIES})
-add_executable(goal src/send_goals.cpp)
-target_link_libraries(goal ${catkin_LIBRARIES})
 # add_dependencies(velocity diy_robot_generate_messages_cpp)
 
 add_executable(rviz_click src/rviz_click_to_2d.cpp)
 target_link_libraries(rviz_click ${catkin_LIBRARIES})
 
-catkin_install_python(PROGRAMS src/cmd_vel.py
+
+catkin_install_python(PROGRAMS src/waypoints.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

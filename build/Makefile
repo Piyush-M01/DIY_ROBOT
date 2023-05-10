@@ -1195,19 +1195,6 @@ odom_broadcaster/fast:
 .PHONY : odom_broadcaster/fast
 
 #=============================================================================
-# Target rules for targets named goal
-
-# Build rule for target.
-goal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 goal
-.PHONY : goal
-
-# fast build rule for target.
-goal/fast:
-	$(MAKE) -f diy_robot/CMakeFiles/goal.dir/build.make diy_robot/CMakeFiles/goal.dir/build
-.PHONY : goal/fast
-
-#=============================================================================
 # Target rules for targets named velocity
 
 # Build rule for target.
@@ -2170,7 +2157,6 @@ help:
 	@echo "... dynamic_reconfigure_gencfg"
 	@echo "... rviz_click"
 	@echo "... odom_broadcaster"
-	@echo "... goal"
 	@echo "... velocity"
 	@echo "... sbg_tf"
 	@echo "... laser_broadcaster"
